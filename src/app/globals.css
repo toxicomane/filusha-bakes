@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-crimson-deep: #8B1A2B;
+    --color-crimson-accent: #D9485B;
+    --color-coral-warm: #E87461;
+    --color-beige-warm: #F5EDE3;
+    --color-chocolate-dark: #2C1810;
+    --color-cream-bg: #FAF6F0;
+  }
+
+  body {
+    background-color: #FAF6F0;
+    color: #2C1810;
+    font-family: var(--font-ibm-plex), system-ui, -apple-system, sans-serif;
+    background-image: radial-gradient(#2c1810 0.4px, transparent 0.4px);
+    background-size: 16px 16px;
+    background-color: #FAF6F0;
+    background-position: 0 0;
+  }
+}
+
+.font-heading {
+  font-family: var(--font-unbounded), system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-ibm-plex), system-ui, sans-serif;
+}
+
+.font-price {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+/* Tactile Craft Design System Elements */
+
+.border-tactile {
+  border: 2px solid #2C1810;
+}
+
+.border-crimson-deep {
+  border: 2px solid #8B1A2B;
+}
+
+.shadow-tactile-sm {
+  box-shadow: 2px 2px 0px #2C1810;
+}
+
+.shadow-tactile {
+  box-shadow: 4px 4px 0px #2C1810;
+}
+
+.shadow-tactile-crimson {
+  box-shadow: 4px 4px 0px #8B1A2B;
+}
+
+.shadow-tactile-lg {
+  box-shadow: 6px 6px 0px #2C1810;
+}
+
+.hover-tactile {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hover-tactile:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #2C1810;
+}
+
+.hover-tactile:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px #2C1810;
+}
+
+.hover-tactile-crimson:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #8B1A2B;
+}
+
+/* Craft Stamp / Badge */
+.craft-stamp {
+  border: 2px dashed #8B1A2B;
+  background-color: #F5EDE3;
+  color: #8B1A2B;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.craft-label {
+  background-color: #2C1810;
+  color: #FAF6F0;
+  font-family: var(--font-unbounded), sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+}
+
+/* Custom scrollbar for dense viewports */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EDE3;
+}
+::-webkit-scrollbar-thumb {
+  background: #8B1A2B;
+  border-radius: 0px;
+}
